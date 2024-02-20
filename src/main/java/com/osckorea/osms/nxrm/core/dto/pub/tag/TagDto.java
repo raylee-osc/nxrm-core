@@ -1,4 +1,4 @@
-package com.osckorea.osms.nxrm.core.dto.pub.tag.common;
+package com.osckorea.osms.nxrm.core.dto.pub.tag;
 
 import java.sql.Timestamp;
 import java.util.Map;
