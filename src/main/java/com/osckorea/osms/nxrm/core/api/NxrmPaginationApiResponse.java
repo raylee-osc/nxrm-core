@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-public class PaginationApiResponse<T> {
+public class NxrmPaginationApiResponse<T> {
     private List<T> items;
     private String continuationToken;
 }
