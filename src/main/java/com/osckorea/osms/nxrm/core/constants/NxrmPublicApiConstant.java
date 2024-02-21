@@ -15,7 +15,7 @@ public class NxrmPublicApiConstant {
     // * Azure Blob Store
     public final static String VERIFY_AZURE_BLOBSTORE_CONNECTION = BASE_URL + "/azureblobstore/test-connection";
 
-    // * Blob Store
+    // * BLOB Store
     public final static String BLOBSTORE = BASE_URL + "/blobstores";
 
     public final static Function<String, String> BLOBSTORE_QUOTA_STATUS = (blobStoreName) -> new StringBuilder(BLOBSTORE).append("/").append(blobStoreName).append("/quota-status").toString();
