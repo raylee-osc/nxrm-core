@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 @Getter
 @RequiredArgsConstructor
-public enum ActionType {
+public enum AllActionType {
     ADD("add"),
     CREATE("create"),
     BROWSE("browse"),
