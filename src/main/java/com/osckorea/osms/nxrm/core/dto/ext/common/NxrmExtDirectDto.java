@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 import lombok.Singular;
 import lombok.ToString;
 
-public class NxrmExtDirectDto {
+public final class NxrmExtDirectDto {
     @Getter
     @Builder
     public static class Request {
@@ -70,7 +70,7 @@ public class NxrmExtDirectDto {
             final Integer page,
             final Integer start,
             final Integer limit,
-            final @Singular("filter") List<Filter> filter,
+            final @Singular List<Filter> filters,
             final Sort sort
         ) {
             this.page = page;

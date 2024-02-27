@@ -1,12 +1,13 @@
 package com.osckorea.osms.nxrm.core.dto.pub.privilege;
 
 import java.util.List;
-import com.osckorea.osms.nxrm.core.dto.pub.privilege.type.ScriptPrivilegeActionType;
+import com.osckorea.osms.nxrm.core.model.pub.privilege.ScriptPrivilegeActionType;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Singular;
+
 
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
@@ -18,14 +19,14 @@ public class ScriptPrivilegeDto {
 
     @Builder
     public ScriptPrivilegeDto(
-        String name,
-        String description,
-        @Singular List<ScriptPrivilegeActionType> actions,
-        String scriptName
+        final String name,
+        final String description,
+        @Singular final List<ScriptPrivilegeActionType> actionTypes,
+        final String scriptName
     ) {
         this.name = name;
         this.description = description;
-        this.actions = actions.stream().map(ScriptPrivilegeActionType::getAction).toList();
+        this.actions = actionTypes.stream().map(ScriptPrivilegeActionType::getAction).toList();
         this.scriptName = scriptName;
     }
 }
