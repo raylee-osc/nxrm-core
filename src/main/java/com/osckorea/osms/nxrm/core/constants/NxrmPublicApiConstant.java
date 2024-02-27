@@ -106,7 +106,7 @@ public class NxrmPublicApiConstant {
     
     public final static String PRIVILEGE_WILDCARD = PRIVILEGES + "/wildcard";
     
-    public final static String PRIVILEGE_APPLICATION_ = PRIVILEGES + "/application";
+    public final static String PRIVILEGE_APPLICATION = PRIVILEGES + "/application";
     
     public final static String PRIVILEGE_REPOSITORY_CONTENT_SELECTOR =  PRIVILEGES + "/repository-content-selector";
     

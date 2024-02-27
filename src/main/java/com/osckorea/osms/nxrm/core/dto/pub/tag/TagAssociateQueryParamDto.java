@@ -10,7 +10,7 @@ import lombok.experimental.SuperBuilder;
  */
 @Getter
 @SuperBuilder
-public class TagAssociateQuaryParamDto extends AbstractTagAssociateCommonQueryParam {
+public class TagAssociateQueryParamDto extends AbstractTagAssociateCommonQueryParam {
         // ----- Conan -----
     @Param("conan.baseVersion")
     private String conanBaseVersion;
